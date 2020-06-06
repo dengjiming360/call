@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/lin3"
+    tools:context=".Main6Activity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tayler">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/fw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        android:src="@drawable/fw"/>
+    <com.example.twentyfour.JianbianTv
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jb"
+        android:text="恭喜你获得最高分"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="42dp"
+        android:gravity="center"
+        ></com.example.twentyfour.JianbianTv>
+</FrameLayout>
+</LinearLayout>

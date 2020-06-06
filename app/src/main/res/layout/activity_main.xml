@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/lifes"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:text="生命："></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pinkheart"
+            android:layout_toRightOf="@id/lifes"
+            android:layout_marginTop="5dp"
+            android:id="@+id/img11"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pinkheart"
+            android:layout_toRightOf="@id/img11"
+            android:layout_marginTop="5dp"
+            android:id="@+id/img12"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pinkheart"
+            android:layout_toRightOf="@id/img12"
+            android:layout_marginTop="5dp"
+            android:id="@+id/img13"></ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="2:00"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/remaintime"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="12dp">
+
+        </TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clocktime"
+            android:layout_toLeftOf="@id/remaintime">
+        </ImageView>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="21dp"
+        android:textColor="#0000FF"
+        android:layout_marginBottom="5dp"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/img1"></ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/img2"
+        ></ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/img3"></ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/img4"
+        ></ImageView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注意：本游戏为24点小游戏，在一副不含大小王的52张扑克牌加上2对大小王共计56张牌中任意抽取4张，利用加减乘除和括号，运算得到24这个结果。J算11，Q算12，K算13，大小王算14，A算1。用1-14这十四个数字得到等于24的等式，允许使用括号。答案可能有多个，系统只显示其中一个参考答案"
+        android:background="#00FFFF"
+        android:id="@+id/totaltv"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000"></TextView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/con"
+        app:layout_constraintTop_toTopOf="@id/totaltv"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="#FFFF00"
+            app:layout_constraintRight_toLeftOf="@+id/textview2" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="#FFFF00"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/textview1"
+            app:layout_constraintRight_toLeftOf="@+id/textview3"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="#FFFF00"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/textview2"
+            app:layout_constraintRight_toLeftOf="@+id/textview4"
+            app:layout_constraintRight_toRightOf="parent" />
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="#FFFF00"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/textview3"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入算式"
+        android:textColor="#880088"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myshape2"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:ellipsize="end"
+        android:textColor="#000000"
+        android:editable="false"
+        android:textSize="28dp"
+        android:id="@+id/suanshi"></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/con2"
+        app:layout_constraintTop_toTopOf="@id/suanshi"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:text="+"
+            android:textSize="26dp"
+            android:gravity="center"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/myshape"
+            app:layout_constraintRight_toLeftOf="@+id/btn2" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn1"
+            app:layout_constraintRight_toLeftOf="@+id/btn3"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:text="×"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn2"
+            app:layout_constraintRight_toLeftOf="@+id/btn4"
+            app:layout_constraintRight_toRightOf="parent" />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:text="÷"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn3"
+            app:layout_constraintRight_toLeftOf="@+id/btn5"
+            app:layout_constraintRight_toRightOf="parent" />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:text="("
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn4"
+            app:layout_constraintRight_toLeftOf="@+id/btn6"
+            app:layout_constraintRight_toRightOf="parent" />
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:text=")"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btn5"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/con3"
+        app:layout_constraintTop_toTopOf="@id/suanshi"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:text="⬅"
+            android:textSize="26dp"
+            android:gravity="center"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/myshape"
+            app:layout_constraintRight_toLeftOf="@+id/btn8" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:gravity="center"
+            android:text="="
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn7"
+            app:layout_constraintRight_toLeftOf="@+id/btn9"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn8"
+            app:layout_constraintRight_toLeftOf="@+id/btn10"
+            app:layout_constraintRight_toRightOf="parent" />
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn9"
+            app:layout_constraintRight_toLeftOf="@+id/btn11"
+            app:layout_constraintRight_toRightOf="parent" />
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn10"
+            app:layout_constraintRight_toLeftOf="@+id/btn12"
+            app:layout_constraintRight_toRightOf="parent" />
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/myshape"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btn11"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn13"
+        android:background="@drawable/myshape"
+        android:layout_marginTop="12dp"
+        android:text="无解"
+        android:textColor="#FF0000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+    </Button>
+</LinearLayout>

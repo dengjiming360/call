@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lin1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ship"
+        android:id="@+id/d2"
+        ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="讹"
+        android:textSize="17dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="24dp"></TextView>
+    </FrameLayout>
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/paodan2"
+            android:id="@+id/d1"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="20dp"
+            ></ImageView>-->
+
+</LinearLayout>

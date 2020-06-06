@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.twentyfour">
+
+    <application
+        android:name=".Total"
+        android:allowBackup="true"
+        android:icon="@mipmap/mipmap_xxxhdpi"
+        android:label="超级速算24点"
+        android:roundIcon="@mipmap/mipmap_xxxhdpi"
+        android:supportsRtl="true"
+        tools:replace="android:label,android:icon,android:roundIcon">
+
+        <activity
+            android:name=".Main6Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main4Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+</manifest>
